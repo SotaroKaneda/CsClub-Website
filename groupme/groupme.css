@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Source Sans Pro';
+    color: #666666;
+    text-align: center;
+}
+
+    .centered h2 {
+        font-size: 40px;
+        font-family: 'Muli';
+        font-weight: 400;
+        color: black;
+	margin: 0 0 5px 0;
+    }
+
+.captcheck_container {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.red-button {
+    font-family: 'Muli';
+    font-weight: 700;
+    font-size: 24px;
+    padding: 8px 20px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border: 2px solid rgb(255, 0, 55);
+    background: rgb(255, 8, 41);
+    border-radius: 5px;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    text-decoration: none;
+}
+
+    .red-button:hover {
+        background-color: transparent;
+        color: rgb(255, 13, 45);
+        border-color: rgb(255, 13, 45) !important;
+        text-shadow: none;
+        transform: scale(1.05);
+    }
+
+    .red-button:hover:before {
+        bottom: 0%;
+        top: auto;
+        height: 100%;
+    }
+
+    .red-button:before {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 0px;
+        width: 100%;
+        z-index: -1;
+        content: '';
+        color: #000 !important;
+        background: white;
+        border-color: transparent;
+        transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    }
+
+    .red-button:disabled {
+        opacity: 0.4;
+        filter: grayscale(0.4);
+        cursor: not-allowed;
+    }
+
+	.red-button:disabled:before {
+            color: white;
+            border: 2px solid rgb(255, 0, 55);
+            transform: none;
+        }
+
+        .red-button:disabled:hover:before {
+            bottom: auto;
+            top: auto;
+            height: auto;
+        }
+
+.bottom-text {
+	position: absolute;
+	left: 50%;
+	bottom: 3%;
+	transform: translateX(-50%);
+}
+
+	.bottom-text a {
+		font-family: 'Source Sans Pro';
+		font-size: 13px;
+		color: rgb(255, 13, 45);
+		text-decoration: none;
+		transition: all 0.3s ease;
+		border-bottom: 1px solid transparent;
+	}
+
+	.bottom-text a:hover {
+		border-color: rgba(255, 13, 45);
+	}
+
+@media only screen and (max-width: 1200px) {
+	.centered {
+		font-size: 40px;
+	}
+	.centered h2 {
+		font-size: 60px;
+	}
+	.captcheck_container {
+		margin: 80px 0;
+	}
+	.captcheck_box {
+		transform: scale(1.7);
+	}
+	.red-button {
+		font-size: 40px;
+		padding: 12px 50px;
+	}
+	.bottom-text a {
+		font-size: 20px;
+	}
+}

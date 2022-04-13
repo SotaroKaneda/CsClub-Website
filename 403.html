@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>403 Forbidden | Computer Science Club at Indiana University</title>
+        <link rel="icon" type="image/png" href="https://csclub.sice.indiana.edu/assets/images/icons/fav.png" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:200,400,700,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="https://csclub.sice.indiana.edu/assets/stylesheets/global.css" />
+        <link rel="stylesheet" type="text/css" href="https://csclub.sice.indiana.edu/assets/stylesheets/vendor/hamburgers.min.css" />
+        <style>
+            .navbar img, .navbar .hamburger {
+                filter: invert(100%);
+            }
+	    #net {
+	    	height: 100%;
+	    }
+            .fcontainer {
+                position: absolute;
+                top: 43%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                /*width: 50%;*/
+                text-align: center;
+            }
+            .fcontainer h1 {
+                font-family: 'Muli';
+                font-weight: 700;
+                font-size: 300px;
+                color: black;
+                margin-bottom: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+        <script src="https://csclub.sice.indiana.edu/assets/scripts/global.js"></script>
+        <script src="https://csclub.sice.indiana.edu/assets/scripts/vendor/three.r92.min.js"></script>
+        <script src="https://csclub.sice.indiana.edu/assets/scripts/vendor/vanta.net.min.js"></script>
+
+        <div class="big-slide" id="net">
+            <div class="fcontainer">
+                <h1>403</h1>
+                Hey! You're not supposed to be here...<br /><br /><br />
+                <a href="https://csclub.sice.indiana.edu" class="red-button">Go home</a>
+            </div>
+        </div>
+
+        <script>
+            VANTA.NET({
+                el: "#net",
+                color: 0xf56d7d,
+                backgroundColor: 0xfdfdfd,
+                points: 8.00,
+                maxDistance: 21.00,
+                spacing: 20.00
+            })
+        </script>
+
+    </body>
+</html>

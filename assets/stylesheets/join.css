@@ -1,0 +1,91 @@
+.alert {
+	display: block;
+	width: 100%;
+	padding: 30px 10px;
+	text-align: center;
+	background-color: #FFD000;
+	color: black;
+	font-size: 20px;
+	font-family: 'Muli';
+	font-weight: 700;
+}
+
+	.alert img {
+		vertical-align: text-top;
+		margin-right: 5px;
+	}
+
+	.alert a {
+		color: black;
+		border-bottom: 2px solid black;
+	}
+
+.event {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(80, 80, 80, 0.1);
+}
+
+    .event .event-name {
+        display: block;
+        width: 100%;
+        height: 180px;
+        text-align: left;
+        background-image: url('../images/backgrounds/logo_red_bg-2.jpg');
+        background-position: bottom left;
+        background-size: cover;
+        padding: 30px;
+        font-size: 35px;
+        color: white;
+        font-family: 'Muli';
+        font-weight: 700;
+        border-radius: 8px 8px 0 0;
+        line-height: 40px;
+    }
+
+    .event .event-desc {
+        display: block;
+        width: 100%;
+        padding: 30px;
+        font-size: 16px;
+        font-family: 'Noto Sans';
+        color: #696969;
+        text-align: center;
+    }
+
+        .event .event-desc .date {
+            font-size: 28px;
+            color: black;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+            .event .event-desc .room {
+                font-size: 24px;
+                color: #333;
+                font-weight: 400;
+                display: inline-block;
+            }
+
+    .event .red-button {
+        width: 50%;
+        margin: 20px auto;
+        display: block;
+    }
+
+	.event .red-button img {
+		width: auto;
+	}
+
+#next-event {
+}
+
+    #next-event h2 {
+        font-size: 36px;
+        letter-spacing: -1px;
+        margin-bottom: 0;
+    }

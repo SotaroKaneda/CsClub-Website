@@ -1,0 +1,21 @@
+.contact {
+    display: block;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    font-weight: 400;
+    background: #fdfdfd;
+    color: #696969;
+    line-height: 26px;
+    padding: 200px 18%;
+}
+
+    .contact h2 {
+        font-family: 'Muli';
+        font-weight: 800;
+        font-size: 50px;
+        letter-spacing: -2px;
+        margin-bottom: 16px;
+        line-height: 68px;
+        color: black;
+        margin-top: 0;
+    }

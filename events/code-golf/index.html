@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code Golf FA19</title>
+        <link href="https://fonts.googleapis.com/css?family=Muli:200,400,700,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet"> 
+        <style type="text/css">
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .header {
+                background-image: url('code_golf_bg.png');
+                background-size: 150%;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+                .header .text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    color: white;
+                    font-family: 'Noto Sans';
+                    font-size: 22px;
+                    width: 60%;
+                    text-shadow: 0 0 14px rgba(0,0,0,0.5);
+                }
+
+                .header h2 {
+                    font-family: 'Muli';
+                    font-weight: 800;
+                    font-size: 80px;
+                    letter-spacing: -2px;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                }
+            .question {
+                display: block;
+                width: 100%;
+                padding: 10% 20%;
+                font-family: 'Noto Sans';
+                font-size: 20px;
+                color: black;
+            }
+                .question h1 {
+                    font-size: 50px;
+                    font-family: 'Muli';
+                    font-weight: 800;
+                    color: black;
+                    letter-spacing: -2px;
+                    margin-top: 0;
+                }
+                .question h2 {
+                    font-size: 30px;
+                    font-family: 'Muli';
+                    font-weight: 700;
+                    color: black;
+                    letter-spacing: -1px;
+                    margin: 5px 0;
+                }
+                .question:nth-child(odd) {
+                    background-color: white;
+                }
+                .question:nth-child(even) {
+                    background-color: #FAFAFA;
+                }
+            pre {
+                font-family: 'Inconsolata';
+                font-size: 18px;
+                color: red;
+                background-color: #EEE;
+                display: inline-block;
+                padding: 2px 4px;
+                margin: 3px 0;
+            }
+            .submit {
+                text-decoration: none;
+                font-size: 24px;
+                background-color: #EEE;
+                color: #222;
+                padding: 10px 20px;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 10px;
+                transition: all 0.2s ease;
+                cursor: pointer;
+            }
+                .submit:hover {
+                    background-color: #CCCCCC;
+                }
+                .submit:before {
+                    content: "Submit"
+                }
+                .submit.submitted:before {
+                    content: "✔️ Re-submit"
+                }
+            .inline {
+                text-decoration: none;
+                color: #444;
+                border-bottom: 1px solid #444;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('body').on('click', '.submit', function() {
+                    $(this).addClass('submitted');
+                    window.open("https://forms.gle/" + $(this).attr('data-form'), "_blank", "toolbar=no,menubar=no,width=700,height=800,top=" + ((screen.height/2) - 400) + ",left=" + ((screen.width/2) - 350));
+                });
+            });
+        </script>
+
+        <div class="header">
+            <div class="text">
+                Welcome to <h2>Code Golf!</h2>
+            The rules: solve the question with the shortest amount of characters to win. The team with the most questions solved at the end of the match wins.
+            Ties will be broken by submission time.
+            <br /><br />
+            For each question, write code in whatever IDE or editor you'd like. You can use any of the following languages: Bash, C, C++, C#, Haskell, Java, JavaScript, Lua, Pascal, Perl, PHP, Python, R, Racket, Ruby, or Rust. Write your code in a function that prints the output. If the language you're using requires extra boilerplate code, you don't need to include it, just the function definition.
+            For libraries, you should only use the ones that come standard with your language, no third-party that require installation.
+            <br /><br />
+            To submit your code, click the "Submit" button and upload the code file (for python, .py, for Java, .java, etc). Any member of your team can submit answers for your team. Just be sure to include your team number on the form.
+            </div>
+        </div>
+        <div class="question">
+            <h1>1. Double Up</h1>
+            Given an input string, double each character in the string.
+            <br /><br />
+            <h2>Example 1</h2>
+            Input: <pre>"Hello World"</pre><br />
+            Output: <pre>"HHeelllloo  WWoorrlldd"</pre><br /><br />
+            <span id="submit-1" class="submit" data-form="B1GpqN8cpamQuQky8"></span>
+        </div>
+        <div class="question">
+            <h1>2. !!!</h1>
+            Given an input string, insert a <pre>!</pre> inbetween each two characters.
+            <br /><br />
+            <h2>Example 1</h2>
+            Input: <pre>"Hello World"</pre><br />
+            Output: <pre>H!e!l!l!o! !W!o!r!l!d</pre><br /><br />
+            <h2>Example 2</h2>
+            Input: <pre>"H"</pre><br />
+            Output: <pre>H</pre><br /><br />
+            <span id="submit-2" class="submit" data-form="sGqee7G83tqcgCAk9"></span>
+        </div>
+        <div class="question">
+            <h1>3. Leap Years</h1>
+            A leap year is a year which is divisible by 4, except for centennial years, unless they are divisible by 400.
+            <br /><br />Write a program that prints out all leap years from 1800 to 2400, each one on a new line.
+            <br /><br />
+            <h2>Hints</h2>
+            The years <pre>1804, 1808, 1812, 2400</pre> are leap years.<br />The years <pre>1800, 1900</pre> are not.<br /><br />
+            <span id="submit-3" class="submit" data-form="V1BVH1KJceaLf8NBA"></span>
+        </div>
+        <div class="question">
+            <h1>4. Out Loud</h1>
+            Given an integer in the range of 0 to 999, print the number written out in English.<br /><br />
+            <h2>Example 1</h2>
+            Input: <pre>0</pre><br />
+            Output: <pre>zero</pre><br /><br />
+            <h2>Example 2</h2>
+            Input: <pre>84</pre><br />
+            Output: <pre>eighty-four</pre><br /><br />
+            <h2>Example 3</h2>
+            Input: <pre>521</pre><br />
+            Output: <pre>five hundred and twenty-one</pre><br /><br />
+            <span id="submit-4" class="submit" data-form="EDgSFbVX17ESiLH66"></span>
+        </div>
+        <div class="question">
+            <h1>5. Generate a Plate</h1>
+            Given an abbreviation of a U.S. state as an input, randomly generate a valid license plate number in that state.<br /><br />
+            A full list of plate formats in each state can be found <a class="inline" href="plates.txt" target="_blank">here</a>. 
+            Each <pre>A</pre> can be any letter A-Z, and each <pre>0</pre> can be any number 0-9. Comma-separated lists can be any of the listed formats.
+            <br /><br />
+            <h2>Example 1</h2>
+            Input: <pre>"TX"</pre><br />
+            Example output: <pre>SCV-1924</pre><br /><br />
+            <h2>Example 2</h2>
+            Input: <pre>"IN"</pre><br />
+            Example output: <pre>824XR</pre><br /><br />
+            <h2>Example 3</h2>
+            Input: <pre>"UT"</pre><br />
+            Example output: <pre>H82 7EW</pre><br /><br />
+            <span id="submit-5" class="submit" data-form="qiDDCsB43iyZB8s96"></span>
+        </div>
+    </body>
+</html>

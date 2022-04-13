@@ -1,0 +1,213 @@
+.alert {
+	display: block;
+	width: 100%;
+	padding: 60px 5%;
+	text-align: center;
+	background-color: #FFD000;
+	color: black;
+	font-size: 20px;
+	font-family: 'Muli';
+	font-weight: 700;
+}
+
+	.alert img {
+		vertical-align: text-top;
+		margin-right: 5px;
+	}
+
+	.alert a {
+		color: black;
+		border-bottom: 2px solid black;
+	}
+
+.calendar {
+    display: block;
+    width: 100%;
+    padding: 160px 6% 200px 6%;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+	.calendar #hide-past {
+		display: block;
+		padding-bottom: 60px;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-family: 'Muli';
+		color: #999;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+	
+		.calendar #hide-past:hover {
+			color: #222;
+		}
+
+.event {
+    display: inline-block;
+    width: 21%;
+    background: linear-gradient(rgba(255, 179, 192, 0.13), rgba(214, 5, 40, 0.637)), url('../images/backgrounds/menu_bg_3D.jpg');
+    background-size: cover;
+    background-position: 43%;
+    margin: 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(53, 53, 53, 0.281);
+    position: relative;
+    top: 40px;
+    opacity: 0;
+    cursor: default;
+}
+
+    .event.done {
+        transition: all 0.3s ease;
+    }
+
+    .event.done:hover {
+        transform: scale(1.05);
+        box-shadow: 0 30px 40px rgba(53, 53, 53, 0.411);
+    }
+
+    .event .event-name {
+        display: flex;
+        width: 100%;
+        height: 280px;
+        text-align: left;
+        padding: 5px 40px 10px 33px;
+        font-size: 40px;
+        line-height: 42px;
+        color: white;
+        font-family: 'Muli';
+        font-weight: 700;
+        border-radius: 8px 8px 0 0;
+    }
+
+        .event .event-name .event-span {
+            align-self: flex-end;
+        }
+
+	.event .event-name .event-tagline {
+	    display: block;
+	    font-size: 16px;
+	    text-transform: uppercase;
+	    letter-spacing: 4px;
+	    color: rgba(255, 255, 255, 0.7);
+	    font-stretch: condensed;
+	}
+
+    .event .event-desc {
+        display: block;
+        width: 100%;
+        padding: 5px 33px 25px 33px;
+        font-size: 16px;
+        font-family: 'Noto Sans';
+        text-align: left;
+    }
+
+        .event .event-desc .date {
+            font-size: 25px;
+            color: rgba(255, 255, 255, 0.884);
+            font-weight: 700;
+            display: block;
+        }
+
+            .event .event-desc .room {
+                font-size: 21px;
+                color: rgba(255, 255, 255, 0.733);
+                font-weight: 400;
+                display: inline-block;
+            }
+
+            
+
+    .event.old {
+        filter: grayscale(20%);
+    }
+
+        .event.old .red-button {
+            cursor: not-allowed;
+        }
+
+	.event .room a {
+		color: white;
+		border-bottom: 1px solid white;
+	}
+
+.red-button {
+    width: 52%;
+    margin: 25px 0;
+    display: block;
+    background: rgb(243, 2, 54);
+    border-color: rgb(243, 2, 54);
+}
+
+    .red-button.disabled {
+        opacity: 0.5;
+        filter: grayscale(10%);
+    }
+
+    .red-button:hover {
+        border-color: white !important;
+    }
+
+@media only screen and (max-width: 1891px) {
+    .event .event-name {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1770px) {
+    .event {
+        width: 25%;
+    }
+    .event .event-name {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .event .event-name {
+        font-size: 32px;
+    }
+    .red-button {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1356px) {
+    .event {
+        width: 30%;
+    }
+    .event .event-name {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1217px) {
+    .event {
+        width: 50%;
+    }
+    .event .event-name {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 955px) {
+    .event {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 799px) {
+    .event {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 643px) {
+    .event {
+        width: 90%;
+    }
+    .event .event-name {
+        font-size: 35px;
+    }
+}

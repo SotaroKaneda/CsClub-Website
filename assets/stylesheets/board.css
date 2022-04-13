@@ -1,0 +1,75 @@
+
+.board-slide {
+    display: block;
+    width: 100%;
+    padding: 150px 18%;
+    background-color: #fdfdfd;
+}
+
+    .board-slide.gray {
+        background-color: #f3f3f3;
+    }
+
+    .board-slide table {
+        width: 100%;
+        position: relative;
+        top: 50px;
+        opacity: 0;
+    }
+
+    .board-slide h1 {
+        font-size: 60px;
+        font-family: 'Muli';
+        font-weight: 800;
+        color: black;
+        letter-spacing: -2px;
+        margin-top: 0;
+        margin-bottom: -6px;
+        line-height: 50px;
+    }
+
+    .board-slide h2 {
+        font-size: 40px;
+        font-family: 'Noto Sans';
+        font-weight: 400;
+        color: #333333;
+        letter-spacing: -1px;
+        margin-top: 10px;
+        line-height: 40px;
+    }
+
+    .board-slide td.member-portrait {
+        width: 33%;
+	height: 530px;
+        background-size: cover;
+        background-position: center;
+        /*box-shadow: 20px 20px 0 #000000;*/
+        box-shadow: 0 0 40px rgba(80, 80, 80, 0.4);
+        border-radius: 8px;
+    }
+
+    .board-slide td:nth-child(2) {
+        padding: 40px 0 40px 60px;
+        font-family: 'Noto Sans';
+        font-size: 24px;
+        color: #555555;
+        letter-spacing: -1px;
+    }
+
+@media only screen and (max-width: 1699px) {
+    .board-slide td.member-portrait {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 1499px) {
+    .board-slide {
+        padding: 100px 10%;
+    }
+}
+
+@media only screen and (max-width: 1045px) {
+    .board-slide td.member-portrait {
+        display: none;
+    }
+}

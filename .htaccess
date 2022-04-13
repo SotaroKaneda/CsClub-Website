@@ -1,0 +1,15 @@
+# use custom 403 and 404 pages
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+	
+# redirect requests to "csclub.soic" to "csclub.sice"
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^csclub.soic.indiana.edu$ [NC]
+RewriteRule ^ https://csclub.sice.indiana.edu%{REQUEST_URI} [L,R=301,NE]
+
+<files csclub_site.sh>
+order allow,deny
+deny from all
+</files>
