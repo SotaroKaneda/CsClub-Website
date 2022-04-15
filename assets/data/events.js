@@ -3,12 +3,12 @@
 var events = [
 	{
 		name: 'Destress Event',
-		date: 1649977200,
+		date: 1651186800,
 		loc: 'Luddy Hall Room 0117 (BLIF 0117)'
 	},
 	{
 		name: 'Guest Speaker Todd Jochrem(Entrepeneur)',
-		date: 1651186800,
+		date: 1650582000,
 		loc: 'Luddy Hall Room 0117 (BLIF 0117)'
 	},
 	{

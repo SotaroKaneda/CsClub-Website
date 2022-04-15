@@ -24,6 +24,17 @@ var officers = [
 		email: 'cnpage@iu.edu'
 	},
 	{
+		name: 'Shweta Panampilly',
+		rank: 'Technical Content Producer',
+		year: 'Graduate Student',
+		major: ['Data Science'],
+		spec: ['Big Data'],
+		home: 'NA',
+		hobby: 'NA',
+		photo: 'shweta.jpg',
+		email: 'NA@iu.edu'
+	},
+	{
 		name: 'Yash Gollapudi',
 		rank: 'Director of Events',
 		year: 'Sophomore',
@@ -31,7 +42,7 @@ var officers = [
 		spec: ['Foundational Data Science'],
 		home: 'Bloomington, Illinois',
 		hobby: 'Speed Cubber, Movies, Browser of Memes',
-		photo: 'placeholder.jpg',
+		photo: 'yash.jpg',
 		email: 'yashgoll@iu.edu'
 	},
 	{
@@ -54,7 +65,7 @@ var officers = [
 		minor: ['NA'],
 		home: 'NA',
 		hobby: 'Skiing, Baking, Board games',
-		photo: 'placeholder.jpg',
+		photo: 'jeneve.jpg',
 		email: 'scloteau@iu.edu'
 	},
 	{
@@ -65,7 +76,7 @@ var officers = [
 		spec: ['Cyber Physical Systems'],
 		home: 'Columbus, Indiana',
 		hobby: 'Soccer, Coffee, Biking, Cooking',
-		photo: 'placeholder.jpg',
+		photo: 'sotaro.jpg',
 		email: 'skaneda@iu.edu',
 	},
 	{
