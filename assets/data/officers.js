@@ -75,9 +75,53 @@ var officers = [
 		major: ['Intelligent Systems Engineering'],
 		spec: ['Cyber Physical Systems'],
 		home: 'Columbus, Indiana',
-		hobby: 'Soccer, Coffee, Biking, Cooking',
+		hobby: 'Soccer, Coffee, Cycling, Cooking',
 		photo: 'sotaro.jpg',
-		email: 'skaneda@iu.edu',
+		email: 'skaneda@iu.edu'
+	},
+	{
+		name: 'Jesus Garcia',
+		rank: 'Technical Content Producer',
+		year: 'Junior',
+		major: ['Intelligent Systems Engineering'],
+		spec: ['NA'],
+		home: 'Zionsville',
+		hobby: 'Cycling, Soccer, Lifting',
+		photo: 'jesus.jpg',
+		email: 'jesusbgarcia2801@gmail.com'
+	},
+	{
+		name: 'Vineeth Pulipati',
+		rank: 'TCP',
+		year: 'Junior',
+		major: ['Computer Science'],
+		spec: ['NA'],
+		home: 'Andhra Pradesh, India',
+		hobby: 'Cooking, and Coding',
+		photo: 'vineeth.jpg',
+		email: 'vipuli@iu.edu'
+	},
+	{
+		name: 'Ava Frank',
+		rank: 'TCP',
+		year: 'Sophomore',
+		major: ['Finance', ' Computer Science'],
+		spec: ['Software Engineering'],
+		home: 'Fishers, Indiana',
+		hobby: 'Making ice cream and plaing softball',
+		photo: 'ava.jpg',
+		email: 'avafrank@iu.edu'
+	},
+	{
+		name: 'Ujjwal Dubey',
+		rank: 'Director of Events',
+		year: 'Junior',
+		major: ['Computer Science'],
+		spec: ['Machine Learning'],
+		home: 'NA',
+		hobby: 'Tennis, Hiking, Blogging, and Music',
+		photo: 'ujjwal.jpg',
+		email: 'ujjdebey@iu.edu'
 	},
 	{
 		name: 'Bryant Balting',
